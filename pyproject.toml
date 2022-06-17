@@ -1,0 +1,28 @@
+[project]
+name = "lev.shadow1ng.fscan"
+version = "0.1.2.3"
+description = ""
+dynamic = ["classifiers"]
+requires-python = ">=3.10"
+dependencies = [
+    "levrt~=1.3",
+]
+
+[[project.authors]]
+name = ""
+email = ""
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm]
+editable-backend = "path"
+includes = ["lev"]
+
+[[tool.pdm.source]]
+name = "levhub"
+url = "https://__token__:${LEVHUB_TOKEN}@pypi.lev.zone/simple/"
